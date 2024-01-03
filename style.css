@@ -1,0 +1,45 @@
+.topnav {
+    font-family: arial;
+    font-size: 24px;
+    margin: 25px;
+    width: 350px;
+    height: 200px;
+    /* Setup */
+    position: relative;
+
+}
+
+.icon {
+    text-align: center;
+    padding-left: 600px;
+    width: 200px;
+
+}
+
+.topnav input {
+    border-radius: 40px;
+    position: absolute;
+    text-align: center;
+    margin-left: 700px;
+    height: 40px;
+    width: 300px;
+    margin-top: -100px;
+ 
+}
+
+.buttons{
+    display: inline-flex;
+    margin-top: 40px;
+    margin-left: 700px;
+}
+
+.buttons .btn{
+    background-color: lightblue;
+    border-radius: 40px;
+    display: inline-flex;
+}
+
+.buttons :first-child{
+    background-color: lightblue;
+    margin-right: 130px;
+}

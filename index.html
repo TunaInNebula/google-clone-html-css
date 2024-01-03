@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Example</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="topnav">
+        <div class="icon">
+            <img src="social.png" alt="">
+        </div>
+        <div class="input">
+            <input id="searchInput" type="text" placeholder="Search..">
+        </div>
+        <div class="buttons">
+            <button class="btn btn-primary" onclick="search()">Search</button>
+            <button class="btn btn-light" onclick="feelingLucky()">I Feel Lucky</button>
+        </div>
+    </div>
+
+    <script>
+        function search() {
+            var searchTerm = document.getElementById('searchInput').value;
+            window.location.href = 'https://www.google.com/search?q=' + searchTerm;
+        }
+
+        function feelingLucky() {
+            var searchTerm = document.getElementById('searchInput').value;
+
+            if (searchTerm.trim() !== "") {
+
+                window.location.href = 'https://www.google.com/search?q=' + searchTerm + '&btnI=1';
+            } else {
+
+                window.location.href = 'https://www.example.com';
+            }
+        }
+    </script>
+</body>
+
+</html>
